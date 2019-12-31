@@ -26,10 +26,11 @@ DROP INDEX
 ## SELECT
 ```sql
 --Select All Records From A Table
-
 SELECT * FROM TableName;
+
 --Select Certain Columns From A Table
 SELECT column1, column2 ... FROM TableName;
+
 --This Would Select The CustomerName And City Columns From The Customers Table
 ex. SELECT CustomerName, City FROM Customers;
 
@@ -37,6 +38,7 @@ ex. SELECT CustomerName, City FROM Customers;
 
 --Selects Only Distinct Values From The Country Column In The Customers Table
 SELECT DISTINCT Country FROM Customers;
+
 --Returns The Number Of Distinct Countries In The Customers Table
 SELECT COUNT(DISTINCT Country) FROM Customers;
 ```

@@ -1,5 +1,6 @@
-# SQL Cheatsheet by Adam Jean-Laurent
-Source: [W3Schools](https://www.w3schools.com/sql/default.asp)
+# SQL Cheatsheet by Adam Jean-Laurent (Work In Progress)
+Most Of The Information Pulled From: [W3Schools](https://www.w3schools.com/sql/default.asp)
+
 ### Most Important SQL Commands
 ```sql
 -- Extracts data from a database
@@ -41,3 +42,27 @@ SELECT COUNT(DISTINCT Country) FROM Customers;
 ```
 
 ## WHERE
+
+```sql
+-- The Where Clause Is Used To Extract  Only Records That Fulfill A Specified Condition
+
+ex. SELECT column1, column2 FROM tableName WHERE condition;
+
+-- The WHERE clause is not only used in SELECT Statements, it is also used in UPDATE, DELETE etc.
+
+-- selects all the customers from the country 'Mexico' in the Customers table
+SELECT * FROM Customers WHERE Country ='Mexico';
+
+-- WHERE Clauses can be combined with AND, OR, and NOT operators
+
+SELECT column1, column2 FROM tableName WHERE condition1 AND condition2 AND condition3;
+
+SELECT column1, column2 FROM tableName WHERE condition1 OR condition2 OR condition3;
+
+SELECT column1, column2 FROM tableName WHERE  NOT condition1;
+
+-- They can be combined together as well,
+
+SELECT * FROM Customers WHERE Country = 'Germany' AND (City = 'Berlin' OR City = 'Munchen'); 
+
+```

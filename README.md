@@ -1,5 +1,5 @@
 # SQL Cheatsheet by Adam Jean-Laurent
-
+Source: [W3Schools](https://www.w3schools.com/sql/default.asp)
 ### Most Important SQL Commands
 ```sql
 -- Extracts data from a database

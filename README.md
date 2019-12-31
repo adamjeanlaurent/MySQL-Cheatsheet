@@ -3,7 +3,7 @@
 ### Most Important SQL Commands
 
 Extracts data from a database
-`SELECT`
+`sql SELECT`
 
 Updates data in a database
 `UPDATE`

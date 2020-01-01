@@ -66,5 +66,19 @@ SELECT column1, column2 FROM tableName WHERE  NOT condition1;
 -- They can be combined together as well,
 
 SELECT * FROM Customers WHERE Country = 'Germany' AND (City = 'Berlin' OR City = 'Munchen'); 
+```
+## INSERT INTO
 
+```sql
+-- The INSERT INTO statement is used to insert new records in a table
+
+-- Can be written in two ways, if you're inserting into only some columns, specify by name, if you're inserting into all columns, you don't have to specify the columns name, but be sure to order the values in the correct order.
+
+-- First Way
+-- Insert val1 into col1. val2 into col2, etc...
+INSERT INTO tableName (column1, column2, column3) VALUES (value1, value2, value3);
+
+-- Second Way
+-- Same outcome as the first way assuming there are only three columns in the table
+INSERT INTO tableName VALUES(value1, value2, value3);
 ```

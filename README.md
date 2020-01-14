@@ -81,4 +81,19 @@ INSERT INTO tableName (column1, column2, column3) VALUES (value1, value2, value3
 -- Second Way
 -- Same outcome as the first way assuming there are only three columns in the table
 INSERT INTO tableName VALUES(value1, value2, value3);
+
+-- ex.
+INSERT INTO Customers (Name, Age) VALUES ("Adam", "22");
+```
+
+## MISC 
+```sql
+-- NULL VALUES
+
+-- Fields that are optional may contain NULL values
+-- Can Query with IS NULL & IS NOT NULL
+-- ex. 
+SELECT (Age, Name) FROM Customers WHERE Name IS NULL;
+SELECT (AGE, Name) FROM Customers WHERE Name IS NOT NULL;
+
 ```

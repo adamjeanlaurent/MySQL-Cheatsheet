@@ -109,3 +109,15 @@ UPDATE Customers SET Name = "Adam JL", age = "21" WHERE ID = 1;
 -- This example changes every customer with the name Adam to John.
 UPDATE Customers SET Name = "Adam" WHERE Name = "John";
 ```
+
+## DELETE
+```sql
+-- The DELETE statement deletes existing records in a table
+DELETE FROM TableName WHERE condition;
+
+-- This example deletes the customer with the ID of 1
+DELETE FROM Customers WHERE ID = 1;
+
+-- If you omit the WHERE clause all records in a table will be deleted!
+```
+

@@ -115,7 +115,15 @@ SELECT MIN(age) FROM Customers WHERE Name = "Adam";
 -- Selects the oldest customers whose name is Adam
 SELECT MAX(age) FROM Customers WHERE Name = "Adam";
 
+-- COUNT(), AVG(), SUM() functions
 
+-- COUNT() returns the number of row that match a specified criteria
+-- AVG() returns the average value of a numeric column
+-- SUM() returns the total sum of a numeric column
+-- ex.
+SELECT COUNT(CustomerID) FROM Customers;
+SELECT AVG(Age) FROM Customers;
+SELECT SUM(Age) FROM Customers;
 
 ```
 

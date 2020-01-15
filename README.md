@@ -86,6 +86,30 @@ INSERT INTO tableName VALUES(value1, value2, value3);
 INSERT INTO Customers (Name, Age) VALUES ("Adam", "22");
 ```
 
+## UPDATE
+```sql
+--- The UPDATE statement is used to modify the existing records in table
+-- This example changes the name and age of the record with ID = 1.
+UPDATE Customers SET Name = "Adam JL", age = "21" WHERE ID = 1;
+
+-- Be careful! If you omit the WHERE clause every record will be updated!
+
+-- You can also update multiple records at a time if you wanted
+-- This example changes every customer with the name Adam to John.
+UPDATE Customers SET Name = "Adam" WHERE Name = "John";
+```
+
+## DELETE
+```sql
+-- The DELETE statement deletes existing records in a table
+DELETE FROM TableName WHERE condition;
+
+-- This example deletes the customer with the ID of 1
+DELETE FROM Customers WHERE ID = 1;
+
+-- If you omit the WHERE clause all records in a table will be deleted!
+```
+
 ## MISC 
 ```sql
 ## NULL VALUES
@@ -127,28 +151,3 @@ SELECT SUM(Age) FROM Customers;
 
 -- 
 ```
-
-## UPDATE
-```sql
---- The UPDATE statement is used to modify the existing records in table
--- This example changes the name and age of the record with ID = 1.
-UPDATE Customers SET Name = "Adam JL", age = "21" WHERE ID = 1;
-
--- Be careful! If you omit the WHERE clause every record will be updated!
-
--- You can also update multiple records at a time if you wanted
--- This example changes every customer with the name Adam to John.
-UPDATE Customers SET Name = "Adam" WHERE Name = "John";
-```
-
-## DELETE
-```sql
--- The DELETE statement deletes existing records in a table
-DELETE FROM TableName WHERE condition;
-
--- This example deletes the customer with the ID of 1
-DELETE FROM Customers WHERE ID = 1;
-
--- If you omit the WHERE clause all records in a table will be deleted!
-```
-

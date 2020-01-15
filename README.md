@@ -95,5 +95,17 @@ INSERT INTO Customers (Name, Age) VALUES ("Adam", "22");
 -- ex. 
 SELECT (Age, Name) FROM Customers WHERE Name IS NULL;
 SELECT (AGE, Name) FROM Customers WHERE Name IS NOT NULL;
+```
 
+## UPDATE
+```sql
+--- The UPDATE statement is used to modify the existing records in table
+-- This example changes the name and age of the record with ID = 1.
+UPDATE Customers SET Name = "Adam JL", age = "21" WHERE ID = 1;
+
+-- Be careful! If you omit the WHERE clause every record will be updated!
+
+-- You can also update multiple records at a time if you wanted
+-- This example changes every customer with the name Adam to John.
+UPDATE Customers SET Name = "Adam" WHERE Name = "John";
 ```

@@ -88,7 +88,7 @@ INSERT INTO Customers (Name, Age) VALUES ("Adam", "22");
 
 ## MISC 
 ```sql
--- NULL VALUES
+## NULL VALUES
 
 -- Fields that are optional may contain NULL values
 -- Can Query with IS NULL & IS NOT NULL
@@ -96,7 +96,7 @@ INSERT INTO Customers (Name, Age) VALUES ("Adam", "22");
 SELECT (Age, Name) FROM Customers WHERE Name IS NULL;
 SELECT (AGE, Name) FROM Customers WHERE Name IS NOT NULL;
 
--- SELECT TOP
+## SELECT TOP
 
 -- used to specify the number of records to return
 -- The following example returns the first 3 records of the customers table
@@ -115,7 +115,7 @@ SELECT MIN(age) FROM Customers WHERE Name = "Adam";
 -- Selects the oldest customers whose name is Adam
 SELECT MAX(age) FROM Customers WHERE Name = "Adam";
 
--- COUNT(), AVG(), SUM() functions
+## COUNT(), AVG(), SUM() functions
 
 -- COUNT() returns the number of row that match a specified criteria
 -- AVG() returns the average value of a numeric column
@@ -125,6 +125,7 @@ SELECT COUNT(CustomerID) FROM Customers;
 SELECT AVG(Age) FROM Customers;
 SELECT SUM(Age) FROM Customers;
 
+-- 
 ```
 
 ## UPDATE

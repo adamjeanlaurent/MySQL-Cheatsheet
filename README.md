@@ -95,6 +95,19 @@ INSERT INTO Customers (Name, Age) VALUES ("Adam", "22");
 -- ex. 
 SELECT (Age, Name) FROM Customers WHERE Name IS NULL;
 SELECT (AGE, Name) FROM Customers WHERE Name IS NOT NULL;
+
+-- SELECT TOP
+
+-- used to specify the number of records to return
+-- The following example returns the first 3 records of the customers table
+SELECT TOP 3  * FROM Customers;
+-- supports percentages as well,
+SELECT TOP 50 PERCENT * FROM Customers;
+-- as well as WHERE clauses,
+SELECT TOP 3 * FROM Customers WHERE Name = "Bob";
+
+-- MIN() and MAX() Functions
+
 ```
 
 ## UPDATE

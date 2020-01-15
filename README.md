@@ -108,6 +108,15 @@ SELECT TOP 3 * FROM Customers WHERE Name = "Bob";
 
 -- MIN() and MAX() Functions
 
+-- The MIN() function returns the smallest value of the selected column
+-- The MAX() function returns the largest value of the selected column
+-- Selects the youngest customer whose name is Adam
+SELECT MIN(age) FROM Customers WHERE Name = "Adam";
+-- Selects the oldest customers whose name is Adam
+SELECT MAX(age) FROM Customers WHERE Name = "Adam";
+
+
+
 ```
 
 ## UPDATE
